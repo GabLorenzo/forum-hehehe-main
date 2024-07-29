@@ -1,0 +1,508 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Personal Information Specific Styles */
+.personal-info-container {
+    width: 70%;
+    /* max-width: 1200px; Adjust max-width as needed */
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 0 auto 20px; /* Center horizontally and add bottom margin */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.personal-info-container h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.personal-info-container form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px; /* Adjust gap between columns */
+}
+
+.personal-info-container .left-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2px; /* Adjust gap between rows */
+}
+
+.personal-info-container .right-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2px; /* Adjust gap between rows */
+}
+
+.personal-info-container label {
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.personal-info-container input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 40px;
+}
+
+/* Address Details Container */
+.address-details-container {
+    width: 70%;
+    /* max-width: 1200px; Adjust max-width as needed */
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 0 auto 20px; /* Center horizontally and add bottom margin */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.address-details-container h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.address-details-container form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.permanent-address,
+.temporary-address {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px; /* Adjust gap between rows */
+}
+
+.address-details-container label {
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.address-details-container input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 40px;
+}
+
+/* Family Information Container */
+.family-info-container {
+    width: 70%;
+    /* max-width: 1200px; */
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.family-info-container h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.family-info-container form {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    gap: 10px;
+}
+
+.family-info-container label {
+    font-weight: bold;
+    margin-left: 200px;
+
+}
+
+.family-info-container input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: 40px;
+}
+
+/* Spouse Information Container */
+.spouse-info-container {
+    width: 70%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.spouse-info-container h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.spouse-info-container form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.spouse-info-container label {
+    font-weight: bold;
+    margin-left: 200px;
+}
+
+.spouse-info-container input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+.spouse-info-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.spouse-info-container table, 
+.spouse-info-container th, 
+.spouse-info-container td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.spouse-info-container th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+}
+.spouse-info-container input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+.children-info-table input{
+    border: 1px solid #b2000000;
+    width: 405px;
+}
+
+/* Education table */
+.education-info-container {
+    width: 80%;
+    margin: 20px auto; /* Center the container */
+}
+
+.education-info-container h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.education-info-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+   
+}
+
+.education-info-container td {
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    text-align: left;
+    
+}
+
+.education-info-container th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.education-info-container th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.education-info-container td input {
+    width: 100%;
+    height: 100 px;
+    border: 1px solid #ff000000;
+  
+    box-sizing: border-box;
+    padding: 0px;
+    margin-left: 0px;
+}
+ 
+.ulaw{
+    width: 5%;
+} 
+
+.school{
+    width: 30%;
+}
+.basic{
+    width: 20%;
+}
+.one{
+    font-size: 60%;
+}
+
+
+
+/* Civil Service Eligibility Table */
+.civil-service-container {
+    width: 80%;
+    margin: 20px auto; /* Center the container */
+}
+
+.civil-service-container h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.civil-service-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.civil-service-container td, .civil-service-container th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.civil-service-container th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.civil-service-container td input[type="text"] {
+    width: 100%;
+    height: 30px; /* Adjusted height */
+    border: 1px solid #cccccc00; /* Adjusted border color */
+    box-sizing: border-box;
+    padding: 0;
+    margin-left: 0;
+}
+
+/* Specific styling for License column inputs */
+.civil-service-container td input[name="license_number"],
+.civil-service-container td input[name="license_validity"] {
+    width: 90%; /* Adjusted width for side-by-side display */
+    display: inline-block;
+    margin-right: 2%; /* Space between the two inputs */
+}
+.license,.date{
+    width: 5%;
+}
+
+
+/* Work Experience Table */
+.work-experience-container {
+    width: 80%;
+    margin: 20px auto; /* Center the container */
+}
+
+.work-experience-container h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.work-experience-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.work-experience-container td, .work-experience-container th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.work-experience-container th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.work-experience-container td input[type="text"] {
+    width: 100%;
+    height: 30px; /* Adjusted height */
+    border: 1px solid #cccccc00; /* Adjusted border color */
+    box-sizing: border-box;
+    padding: 0;
+    margin-left: 0;
+}
+
+/* Specific styling for Inclusive Dates column inputs */
+.work-experience-container td input[name="date_from"],
+.work-experience-container td input[name="date_to"] {
+    /* width: 48%; Adjusted width for side-by-side display */
+    display: inline-block;
+    margin-right: 2%; /* Space between the two inputs */
+}
+.inclusive2{
+    width: 6%;
+}
+.gov{
+    width: 1%;
+}
+
+/* Voluntary Work Table */
+.voluntary-work-container {
+    width: 80%;
+    margin: 20px auto; /* Center the container */
+}
+
+.voluntary-work-container h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.voluntary-work-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.voluntary-work-container td, .voluntary-work-container th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.voluntary-work-container th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.voluntary-work-container td input[type="text"] {
+    width: 100%;
+    height: 30px; /* Adjusted height */
+    border: 1px solid #cccccc00; /* Adjusted border color */
+    box-sizing: border-box;
+    padding: 0;
+    margin-left: 0;
+}
+
+/* Specific styling for Inclusive Dates column inputs */
+.voluntary-work-container td input[name="date_from_1"],
+.voluntary-work-container td input[name="date_to_1"] {
+    width: 90%; /* Adjusted width for side-by-side display */
+    display: inline-block;
+    margin-right: 2%; /* Space between the two inputs */
+}
+.inclusive3{
+    width: 3%;
+}
+
+/* Learning and Development Table */
+.learning-development-container {
+    width: 80%;
+    margin: 20px auto; /* Center the container */
+}
+
+.learning-development-container h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.learning-development-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.learning-development-container td {
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.learning-development-container th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.learning-development-container td input {
+    width: 100%;
+    height: 30px; /* Adjusted height */
+    border: 1px solid #ff000000; /* Adjusted border color */
+    box-sizing: border-box;
+    padding: 0;
+    margin-left: 0;
+}
+.inclusive{
+    width: 5%;
+}
+.hours{
+    width: 5%;
+}
+
+/* Other Information Table */
+.other-information-container {
+    width: 80%;
+    margin: 20px auto; /* Center the container */
+}
+
+.other-information-container h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.other-information-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.other-information-container td, .other-information-container th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.other-information-container th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.other-information-container td input[type="text"] {
+    width: 100%;
+    height: 30px; /* Adjusted height */
+    border: 1px solid #cccccc00; /* Adjusted border color */
+    box-sizing: border-box;
+    padding: 0;
+    margin-left: 0;
+}
+

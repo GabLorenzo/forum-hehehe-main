@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Side-by-Side Layout</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+
+    <div class="form-container">
+        <!-- Personal Information Container -->
+        <div class="personal-info-container">
+            <h2>Personal Information</h2>
+            <form>
+                <div class="left-column">
+                    <label for="sname">Surname:</label>
+                    <input type="text" id="sname" name="sname">
+    
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname">
+    
+                    <label for="mname">Middle Name:</label>
+                    <input type="text" id="mname" name="mname">
+    
+                    <label for="ext">Extension:</label>
+                    <input type="text" id="ext" name="ext">
+    
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+    
+                    <label for="pob">Place of Birth:</label>
+                    <input type="text" id="pob" name="pob">
+    
+                    <label for="contact_number">Contact Number:</label>
+                    <input type="text" id="contact_number" name="contact_number">
+                </div>
+                <div class="right-column">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+    
+                    <label for="citizenship">Citizenship:</label>
+                    <input type="text" id="citizenship" name="citizenship">
+    
+                    <label for="sex">Sex:</label>
+                    <input type="text" id="sex" name="sex">
+    
+                    <label for="religion">Religion:</label>
+                    <input type="text" id="religion" name="religion">
+    
+                    <label for="height">Height:</label>
+                    <input type="text" id="height" name="height">
+    
+                    <label for="weight">Weight:</label>
+                    <input type="text" id="weight" name="weight">
+    
+                    <label for="blood_type">Blood Type:</label>
+                    <input type="text" id="blood_type" name="blood_type">
+                </div>
+            </form>
+        </div>
+    
+        <!-- Address Details Container -->
+        <div class="address-details-container">
+            <h2>Address Details</h2>
+            <form>
+                <div class="permanent-address">
+                    <h3>Permanent Address</h3>
+                    <label for="perm_street">Street:</label>
+                    <input type="text" id="perm_street" name="perm_street">
+    
+                    <label for="perm_barangay">Barangay:</label>
+                    <input type="text" id="perm_barangay" name="perm_barangay">
+    
+                    <label for="perm_city">City/Town:</label>
+                    <input type="text" id="perm_city" name="perm_city">
+    
+                    <label for="perm_prov">Province:</label>
+                    <input type="text" id="perm_prov" name="perm_prov">
+    
+                    <label for="perm_country">Country:</label>
+                    <input type="text" id="perm_country" name="perm_country">
+    
+                    <label for="perm_zip">Zip Code:</label>
+                    <input type="text" id="perm_zip" name="perm_zip">
+                </div>
+                <div class="temporary-address">
+                    <h3>Temporary Address</h3>
+                    <label for="temp_street">Street:</label>
+                    <input type="text" id="temp_street" name="temp_street">
+    
+                    <label for="temp_barangay">Barangay:</label>
+                    <input type="text" id="temp_barangay" name="temp_barangay">
+    
+                    <label for="temp_city">City/Town:</label>
+                    <input type="text" id="temp_city" name="temp_city">
+    
+                    <label for="temp_prov">Province:</label>
+                    <input type="text" id="temp_prov" name="temp_prov">
+    
+                    <label for="temp_country">Country:</label>
+                    <input type="text" id="temp_country" name="temp_country">
+    
+                    <label for="temp_zip">Zip Code:</label>
+                    <input type="text" id="temp_zip" name="temp_zip">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Family Information Container -->
+    <div class="family-info-container">
+        <h2>Family Information</h2>
+        <form>
+            <label for="fathers_name">Father's Name:</label>
+            <input type="text" id="fathers_name" name="fathers_name">
+
+            <label for="fathers_occupation">Occupation:</label>
+            <input type="text" id="fathers_occupation" name="fathers_occupation">
+
+            <label for="fathers_address">Address:</label>
+            <input type="text" id="fathers_address" name="fathers_address">
+
+            <label for="mothers_name">Mother's Name:</label>
+            <input type="text" id="mothers_name" name="mothers_name">
+
+            <label for="mothers_occupation">Occupation:</label>
+            <input type="text" id="mothers_occupation" name="mothers_occupation">
+
+            <label for="mothers_address">Address:</label>
+            <input type="text" id="mothers_address" name="mothers_address">
+        </form>
+    </div>
+
+    <!-- Spouse Information Container -->
+    <div class="spouse-info-container">
+        <h2>Spouse Information</h2>
+        <form>
+            <label for="spouse_sname">Surname:</label>
+            <input type="text" id="spouse_sname" name="spouse_sname">
+
+            <label for="spouse_fname">First Name:</label>
+            <input type="text" id="spouse_fname" name="spouse_fname">
+
+            <label for="spouse_mname">Middle Name:</label>
+            <input type="text" id="spouse_mname" name="spouse_mname">
+
+            <label for="spouse_occupation">Occupation:</label>
+            <input type="text" id="spouse_occupation" name="spouse_occupation">
+
+            <label for="employer_name">Employer/Business Name:</label>
+            <input type="text" id="employer_name" name="employer_name">
+
+            <label for="business_address">Business Address:</label>
+            <input type="text" id="business_address" name="business_address">
+
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" name="contact">
+        </form>
+
+        <!-- Children Information Table -->
+        <h2>Children Information</h2>
+        <table class="children-info-table">
+            <thead>
+                <tr>
+                    <th>Name of Child</th>
+                    <th>Date of Birth</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" name="child_name"></td>
+                    <td><input type="date" name="child_dob"></td>
+                </tr> 
+                <tr>
+                    <td><input type="text" name="child_name"></td>
+                    <td><input type="date" name="child_dob"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="child_name"></td>
+                    <td><input type="date" name="child_dob"></td>
+                </tr>
+                <!-- Additional rows can be added as needed -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Education Information Container -->
+    <div class="education-info-container">
+        <h2>Educational Background</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>LEVEL</th>
+                    <th class="school">NAME OF SCHOOL (Write in full)</th>
+                    <th class=" basic">BASIC EDUCATION</th>
+                    <th class="ulaw">PERIOD OF ATTENDANCE</th>
+                    <th>HIGHEST LEVEL/ UNITS EARNED</th>
+                    <th>YEAR GRADUATED</th>
+                    <th>SCHOLARSHIP/AWARDS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="one">ELEMENTARY</td>
+                    <td><input type="text" name="elementary_school"></td>
+                    <td><input type="text" name="elementary_course"></td>
+                    <td>
+                        <input type="text" name="elementary_from" placeholder="From">
+                        <input type="text" name="elementary_to" placeholder="To">
+                    </td>
+                    <td><input type="text" name="elementary_units"></td>
+                    <td><input type="text" name="elementary_year"></td>
+                    <td><input type="text" name="elementary_honors"></td>
+                </tr>
+                <tr>
+                    <td class="one">SECONDARY</td>
+                    <td><input type="text" name="secondary_school"></td>
+                    <td><input type="text" name="secondary_course"></td>
+                    <td>
+                        <input type="text" name="secondary_from" placeholder="From">
+                        <input type="text" name="secondary_to" placeholder="To">
+                    </td>
+                    <td><input type="text" name="secondary_units"></td>
+                    <td><input type="text" name="secondary_year"></td>
+                    <td><input type="text" name="secondary_honors"></td>
+                </tr>
+                <tr>
+                    <td class="one">VOCATIONAL</td>
+                    <td><input type="text" name="vocational_school"></td>
+                    <td><input type="text" name="vocational_course"></td>
+                    <td>
+                        <input type="text" name="vocational_from" placeholder="From">
+                        <input type="text" name="vocational_to" placeholder="To">
+                    </td>
+                    <td><input type="text" name="vocational_units"></td>
+                    <td><input type="text" name="vocational_year"></td>
+                    <td><input type="text" name="vocational_honors"></td>
+                </tr>
+                <tr>
+                    <td class="one">COLLEGE</td>
+                    <td><input type="text" name="college_school"></td>
+                    <td><input type="text" name="college_course"></td>
+                    <td>
+                        <input type="text" name="college_from" placeholder="From">
+                        <input type="text" name="college_to" placeholder="To">
+                    </td>
+                    <td><input type="text" name="college_units"></td>
+                    <td><input type="text" name="college_year"></td>
+                    <td><input type="text" name="college_honors"></td>
+                </tr>
+                <tr>
+                    <td class="one">GRADUATE STUDIES</td>
+                    <td><input type="text" name="graduate_school"></td>
+                    <td><input type="text" name="graduate_course"></td>
+                    <td>
+                        <input type="text" name="graduate_from" placeholder="From">
+                        <input type="text" name="graduate_to" placeholder="To">
+                    </td>
+                    <td><input type="text" name="graduate_units"></td>
+                    <td><input type="text" name="graduate_year"></td>
+                    <td><input type="text" name="graduate_honors"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<!-- Civil Service Eligibility Table -->
+<div class="civil-service-container">
+    <h2>CIVIL SERVICE ELIGIBILITY</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>CAREER SERVICE/ RA 1080 (BOARD/ BAR) UNDER SPECIAL LAWS/ CES/ CSEE</th>
+                <th>BARANGAY ELIGIBILITY / DRIVER'S LICENSE, RATING (If Applicable)</th>
+                <th class="date">DATE OF EXAMINATION / CONFERMENT</th>
+                <th>PLACE OF EXAMINATION / CONFERMENT</th>
+                <th class="license">LICENSE (if applicable)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" name="career_service"></td>
+                <td><input type="text" name="barangay_el">
+                </td>
+                <td><input type="text" name="exam_date"></td>
+                <td><input type="text" name="exam_place"></td>
+                <td class="munval">
+                    <input type="text" name="license_number" placeholder="Number">
+                    <input type="text" name="license_validity" placeholder="Validity">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="career_service"></td>
+                <td><input type="text" name="barangay_el">
+                </td>
+                <td><input type="text" name="exam_date"></td>
+                <td><input type="text" name="exam_place"></td>
+                <td class="numval">
+                    <input type="text" name="license_number" placeholder="Number">
+                    <input type="text" name="license_validity" placeholder="Validity">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Work Experience Table -->
+<div class="work-experience-container">
+    <h2>WORK EXPERIENCE</h2>
+    <table>
+        <thead>
+            <tr>
+                <th class="inclusive2">INCLUSIVE DATES (mm/dd/yyyy)</th>
+                <th>POSITION TITLE</th>
+                <th>DEPARTMENT / AGENCY / OFFICE / COMPANY</th>
+                <th>MONTHLY SALARY</th>
+                <th>STATUS OF APPOINTMENT</th>
+                <th class="gov">GOV'T SERVICE (Y/N)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input type="text" name="date_from" placeholder="From">
+                    <input type="text" name="date_to" placeholder="To">
+                </td>
+                <td><input type="text" name="position_title"></td>
+                <td><input type="text" name="department"></td>
+                <td><input type="text" name="monthly_salary"></td>
+                <td><input type="text" name="appointment_status"></td>
+                <td>
+                    <input type="text" name="gov_service">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="date_from" placeholder="From">
+                    <input type="text" name="date_to" placeholder="To">
+                </td>
+                <td><input type="text" name="position_title"></td>
+                <td><input type="text" name="department"></td>
+                <td><input type="text" name="monthly_salary"></td>
+                <td><input type="text" name="appointment_status"></td>
+                <td>
+                    <input type="text" name="gov_service">
+                </td>
+            </tr>
+          
+        </tbody>
+    </table>
+</div>
+
+<!-- Voluntary Work Table -->
+<div class="voluntary-work-container">
+    <h2>VOLUNTARY WORK</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>NAME & ADDRESS OF ORGANIZATION (Write in full)</th>
+                <th class="inclusive3">INCLUSIVE DATES (mm/dd/yyyy)</th>
+                <th>NUMBER OF HOURS</th>
+                <th>LD TYPE</th>
+                <th>NAME & ADDRESS OF ORGANIZATION (Write in full)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" name="organization_name_1"></td>
+                <td>
+                    <input type="text" name="date_from_1" placeholder="From">
+                    <input type="text" name="date_to_1" placeholder="To">
+                </td>
+                <td><input type="text" name="number_of_hours_1"></td>
+                <td><input type="text" name="ld_type_1"></td>
+                <td><input type="text" name="organization_name_2"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="organization_name_1"></td>
+                <td>
+                    <input type="text" name="date_from_1" placeholder="From">
+                    <input type="text" name="date_to_1" placeholder="To">
+                </td>
+                <td><input type="text" name="number_of_hours_1"></td>
+                <td><input type="text" name="ld_type_1"></td>
+                <td><input type="text" name="organization_name_2"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+            <!-- Learning and Development Programs Container -->
+    <div class="learning-development-container">
+        <h2>TRAINING PROGRAMS ATTENDED</h2>
+        <form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>TRAINING PROGRAMS (Write in full)</th>
+                        <th class="inclusive">INCLUSIVE DATES OF ATTENDANCE (mm/dd/yyyy)</th>
+                        <th class="hours">NUMBER OF HOURS</th>
+                        <th>Type of L&D (Managerial/Supervisory/Technical/etc)</th>
+                        <th>CONDUCTED/ SPONSORED BY (Write in full)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" name="program_title"></td>
+                        <td>
+                            <input type="text" name="program_from" placeholder="From">
+                            <input type="text" name="program_to" placeholder="To">
+                        </td>
+                        <td><input type="text" name="program_hours"></td>
+                        <td><input type="text" name="program_type"></td>
+                        <td><input type="text" name="program_sponsor"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="program_title"></td>
+                        <td>
+                            <input type="text" name="program_from" placeholder="From">
+                            <input type="text" name="program_to" placeholder="To">
+                        </td>
+                        <td><input type="text" name="program_hours"></td>
+                        <td><input type="text" name="program_type"></td>
+                        <td><input type="text" name="program_sponsor"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="program_title"></td>
+                        <td>
+                            <input type="text" name="program_from" placeholder="From">
+                            <input type="text" name="program_to" placeholder="To">
+                        </td>
+                        <td><input type="text" name="program_hours"></td>
+                        <td><input type="text" name="program_type"></td>
+                        <td><input type="text" name="program_sponsor"></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </form>
+    </div>
+<!-- Other Information Table -->
+<div class="other-information-container">
+    <h2>OTHER INFORMATION</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>SPECIAL SKILLS AND HOBBIES</th>
+                <th>NON-ACADEMIC DISTINCTIONS / RECOGNITION</th>
+                <th>MEMBERSHIP IN ASSOCIATION/ORGANIZATION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" name="special_skills"></td>
+                <td><input type="text" name="non_academic_distinctions"></td>
+                <td><input type="text" name="membership_association"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="special_skills"></td>
+                <td><input type="text" name="non_academic_distinctions"></td>
+                <td><input type="text" name="membership_association"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="special_skills"></td>
+                <td><input type="text" name="non_academic_distinctions"></td>
+                <td><input type="text" name="membership_association"></td>
+            </tr>
+             <tr>
+                <td><input type="text" name="special_skills"></td>
+                <td><input type="text" name="non_academic_distinctions"></td>
+                <td><input type="text" name="membership_association"></td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
